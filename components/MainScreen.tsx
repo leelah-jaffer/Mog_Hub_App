@@ -41,7 +41,7 @@ function MainScreen (){
                             />  
 
                             
-                        </View>
+                       </View>
                     </View>
                 
                  </View>
