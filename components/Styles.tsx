@@ -64,7 +64,18 @@ const styles = StyleSheet.create({
         shadowRadius: 3
     },
 
-    
+    radioButton: {
+        flexDirection: 'column',
+        alignContent: 'center',
+    },
+
+    raidoLabel: {
+        marginLeft: 5,
+        fontSize: 15,
+        color: 'black'
+    }
+
+
 
 
 
