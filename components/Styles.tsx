@@ -47,8 +47,24 @@ const styles = StyleSheet.create({
     },
 
     radioGroup: {
-        
-    }
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        marginTop: 20,
+        borderRadius: 10,
+        backgroundColor: 'white',
+        padding: 15,
+        elevation: 5,
+        shadowColor: 'black',
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3
+    },
+
+    
 
 
 
