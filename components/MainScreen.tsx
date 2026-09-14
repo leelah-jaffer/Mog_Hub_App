@@ -29,6 +29,13 @@ function MainScreen() {
                         />
                         </View>
 
+                            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                                    <Text style={{ fontWeight: 'bold', fontSize: 18 }}>
+                                        Select your Pet:
+                                    </Text>
+
+                            </View>
+
 
 
                         <View style={styles.radioContainer}>
@@ -41,32 +48,14 @@ function MainScreen() {
                                         color="orange"
 
                                     />
+
+                                    <Text style={styles.radioLabel}>Cat</Text>
                                 </View>
                                 </View>
 
 
 
-                                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                                    <Text style={{ fontWeight: 'bold', fontSize: 18 }}>
-                                        Select your Pet:
-                                    </Text>
-
-                                    <View style={styles.radioContainer}>
-                                        <View style={styles.radioGroup}>
-                                            <View>
-
-
-                                            </View>
-
-
-                                        </View>
-
-
-                                    </View>
-
-
-
-                                </View>
+                               
 
 
                             </View>

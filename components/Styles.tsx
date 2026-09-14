@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         alignContent: 'center',
     },
 
-    raidoLabel: {
+    radioLabel: {
         marginLeft: 5,
         fontSize: 15,
         color: 'black'
