@@ -39,7 +39,18 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1
     },
 
-    
+    radioContainer: {
+        flex: 0,
+        backgroundColor: 'yellow',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    radioGroup: {
+        
+    }
+
+
 
 
 })
