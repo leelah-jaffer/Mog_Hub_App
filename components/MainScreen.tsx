@@ -7,8 +7,28 @@ import {RadioButton} from 'react-native-paper';
 
 
 function MainScreen (){
-    const [petName, setPetName] = useState('');
+     const [petName, setPetName] = useState('');
+    const [pet, setPet] = useState<string[]>([]);
     const [selectedValue, setSelectedValue] = useState('0');
+
+     const renderPets = () => {
+        const arrDisplay = [];
+
+        for(let i = 0; i < pet.length; i++){
+            arrDisplay.push(
+                <View key={i} style={styles.inputContainer}>
+                    <Text style={styles.petTxt}>
+                        {pet[i]}
+                    </Text>
+                </View>
+            );
+        }
+
+        return arrDisplay;
+    }
+
+                 
+
     
     return(
         <View>
@@ -84,6 +104,13 @@ function MainScreen (){
 
                 </View>
                  </View>
+
+                 
+                 
+               
+
+                 
+
 
                      
 
