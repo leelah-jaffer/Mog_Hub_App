@@ -97,6 +97,19 @@ const styles = StyleSheet.create({
     },
 
 
+    bookingPage: {
+
+    },
+
+    bookingHeader: {
+
+    },
+
+    bookingHeaderText: {
+        
+    },
+
+
 
 
 
