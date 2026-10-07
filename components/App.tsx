@@ -1,9 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-
 import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
 
 import MainScreen from './MainScreen';
 import Volunteer from './Volunteer';
@@ -11,7 +8,7 @@ import Booking from './Bookings';
 import Membership from './Membership';
 import Gallery from './Gallery';
 
-type TabParamList = {
+type DrawerParamList = {
   Home: undefined;
   Volunteer: undefined;
   Booking: undefined;
@@ -19,46 +16,46 @@ type TabParamList = {
   Gallery: undefined;
 };
 
-const Tab = createMaterialTopTabNavigator<TabParamList>();
+const Drawer = createDrawerNavigator<DrawerParamList>();
 
 export default function App() {
   return (
     <NavigationContainer>
 
-      <Tab.Navigator
+      <Drawer.Navigator
         screenOptions={{
-          tabBarStyle: {
+          drawerStyle: {
             marginTop: 70,
           },
         }}
       >
 
-        <Tab.Screen
+        <Drawer.Screen
           name="Home"
           component={MainScreen}
         />
 
-        <Tab.Screen
+        <Drawer.Screen
           name="Volunteer"
           component={Volunteer}
         />
 
-        <Tab.Screen
+        <Drawer.Screen
           name="Booking"
           component={Booking}
         />
 
-        <Tab.Screen
+        <Drawer.Screen
           name="Membership"
           component={Membership}
         />
 
-        <Tab.Screen
+        <Drawer.Screen
           name="Gallery"
           component={Gallery}
         />
 
-      </Tab.Navigator>
+      </Drawer.Navigator>
 
     </NavigationContainer>
   );
